@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Il Mondo della Musica</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #111, #1db954);
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px;
+            animation: fadeIn 2s;
+        }
+
+        nav {
+            background-color: #000;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #1db954;
+            transform: scale(1.2);
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .card {
+            background-color: rgba(0,0,0,0.7);
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            width: 120px;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #000;
+        }
+
+        /* Animazione */
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Musica di sottofondo -->
+<audio controls autoplay loop>
+    <source src="https://www.bensound.com/royalty-free-music/track/freedom-whistling-folk" type="audio/mp3">
+</audio>
+
+<header>
+    <h1>🎶 Il Mondo della Musica</h1>
+    <p>Scopri generi, artisti e lasciati trasportare!</p>
+</header>
+
+<nav>
+    <a href="#generi">Generi</a>
+    <a href="#artisti">Artisti</a>
+</nav>
+
+<section id="generi">
+    <h2>🎧 Generi Musicali</h2>
+
+    <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2016/11/29/09/32/music-1869239_1280.jpg">
+        <div>
+            <h3>Pop</h3>
+            <p>Musica moderna, orecchiabile e molto diffusa.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2016/11/22/19/15/guitar-1851427_1280.jpg">
+        <div>
+            <h3>Rock</h3>
+            <p>Chitarre elettriche e grande energia.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2017/01/06/19/15/rapper-1958235_1280.jpg">
+        <div>
+            <h3>Rap / Hip-Hop</h3>
+            <p>Ritmo e parole: uno dei generi più seguiti.</p>
+        </div>
+    </div>
+</section>
+
+<section id="artisti">
+    <h2>⭐ Artisti Famosi</h2>
+
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Taylor_Swift_2023.jpg">
+        <div>
+            <h3>Taylor Swift</h3>
+            <p>Icona pop mondiale.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Drake_2016.jpg">
+        <div>
+            <h3>Drake</h3>
+            <p>Star dell’hip-hop internazionale.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Queen_1977.jpg">
+        <div>
+            <h3>Queen</h3>
+            <p>Leggendaria band rock.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>©️ 2026 Il Mondo della Musica</p>
+</footer>
+
+</body>
+</html>

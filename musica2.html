@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Il Mondo della Musica</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #111, #1db954);
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px;
+            animation: fadeIn 2s;
+        }
+
+        nav {
+            background-color: #000;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #1db954;
+            transform: scale(1.2);
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .card {
+            background-color: rgba(0,0,0,0.7);
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            width: 120px;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #000;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- 🎵 MUSICA FUNZIONANTE -->
+<audio controls loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+</audio>
+
+<header>
+    <h1>🎶 Il Mondo della Musica</h1>
+    <p>Scopri generi, artisti e lasciati trasportare!</p>
+</header>
+
+<nav>
+    <a href="#generi">Generi</a>
+    <a href="#artisti">Artisti</a>
+</nav>
+
+<section id="generi">
+    <h2>🎧 Generi Musicali</h2>
+
+ <div class="card" onclick="mostraTesto('popTesto')">
+    <img src="https://cdn.pixabay.com/photo/2016/11/29/09/32/music-1869239_1280.jpg">
+    <div>
+        <h3>Pop</h3>
+        <p>Musica moderna, orecchiabile e molto diffusa.</p>
+
+        <p id="popTesto" style="display:none;">
+La storia del pop è il racconto di come la musica si sia progressivamente adattata ai gusti di un pubblico sempre più ampio, diventando uno dei linguaggi culturali più diffusi al mondo. Il termine “pop” deriva da “popular music” e indica, più che un genere preciso, uno stile accessibile, immediato e capace di raggiungere grandi masse.
+
+Le sue radici affondano negli anni ’50, quando il rock and roll domina la scena musicale. Artisti come Elvis Presley trasformano la musica in un fenomeno di massa, grazie anche alla diffusione della radio e dei dischi. In questo periodo si pongono le basi del pop moderno: canzoni brevi, melodie orecchiabili e forte appeal commerciale.
+
+Negli anni ’60 il pop si consolida come forma autonoma e conquista il mondo. Band come The Beatles rivoluzionano la musica leggera con melodie innovative e produzioni sempre più sofisticate. Parallelamente, altri gruppi come The Beach Boys sviluppano armonie vocali complesse, contribuendo a elevare il livello artistico del pop.
+
+Durante gli anni ’70 il pop si espande e si mescola con altri generi, diventando ancora più vario. La disco music conquista le classifiche, con gruppi come ABBA, mentre il pop continua a evolversi incorporando elementi di rock, funk e soul. In questo periodo cresce anche l’industria musicale, sempre più orientata al mercato globale.
+
+Gli anni ’80 segnano una svolta decisiva grazie all’impatto dei media visivi. Con l’arrivo di MTV, l’immagine diventa centrale quanto la musica. Artisti come Michael Jackson e Madonna definiscono l’estetica del pop moderno, combinando musica, danza e videoclip spettacolari.
+
+Negli anni ’90 il pop si orienta verso un pubblico giovane e globale. Nascono fenomeni come le boy band, tra cui Backstreet Boys, e nuove icone pop come Britney Spears, che dominano le classifiche grazie anche alla diffusione dei CD.
+
+Con l’arrivo del nuovo millennio, Internet e le tecnologie digitali cambiano radicalmente il modo di produrre e consumare musica. Artisti come Lady Gaga e Taylor Swift reinterpretano il pop mescolandolo con elettronica, country e altri generi, dimostrando la sua grande flessibilità.
+
+Negli anni 2010 e oltre, lo streaming e i social media rendono il pop ancora più globale e ibrido. Nuovi artisti come Billie Eilish e Bad Bunny mostrano come il pop possa incorporare influenze hip hop, elettroniche e latine, superando i confini tradizionali.        </p>
+    </div>
+</div>
+<div class="card" onclick="mostraTesto('rockTesto')">
+    <img src="https://cdn.pixabay.com/photo/2016/11/21/15/46/concert-1846007_1280.jpg">
+    <div>
+        <h3>Rock</h3>
+        <p>Genere energico con chitarre elettriche e ritmi intensi.</p>
+
+        <p id="rockTesto" style="display:none;">
+        La storia del rock è un racconto unico di ribellione, innovazione e trasformazione culturale, che attraversa più di mezzo secolo di musica e società. Nasce negli anni ’50 negli Stati Uniti come evoluzione del rock and roll, un genere che mescola rhythm and blues, country e gospel. Figure come Elvis Presley e Chuck Berry danno forma a uno stile energico e diretto, capace di parlare soprattutto ai giovani e di rompere le convenzioni dell’epoca.
+
+Negli anni ’60 il rock cresce e si trasforma, diventando un fenomeno globale. In Regno Unito nascono band destinate a cambiare tutto, come The Beatles e The Rolling Stones, protagoniste della cosiddetta “British Invasion”. In questo periodo il rock non è solo intrattenimento, ma anche espressione artistica e sociale: artisti come Bob Dylan introducono testi impegnati, mentre Jimi Hendrix rivoluziona il modo di suonare la chitarra elettrica.
+
+Gli anni ’70 rappresentano un’epoca di grande sperimentazione. Il rock si divide in molti sottogeneri: il rock progressivo con gruppi come Pink Floyd, l’hard rock e l’heavy metal con Led Zeppelin, e il glam rock con artisti come David Bowie. Verso la fine del decennio nasce anche il punk rock, una reazione più semplice e aggressiva rappresentata da band come Ramones.
+
+Negli anni ’80 il rock entra nell’era dei media di massa, grazie anche a MTV, che rende fondamentale l’immagine oltre alla musica. Si affermano sonorità più accessibili e commerciali, ma anche nuove correnti come il rock alternativo. Artisti come Bruce Springsteen e gruppi come U2 raggiungono un pubblico mondiale.
+
+Negli anni ’90 il rock cambia ancora volto con il grunge, nato a Seattle e rappresentato da band come Nirvana, che riportano il genere a sonorità più crude e introspettive. Parallelamente si sviluppa l’alternative rock, che amplia ulteriormente i confini del genere.
+
+Dal 2000 in poi il rock perde parte del suo dominio commerciale, lasciando spazio al pop e all’hip-hop, ma continua a evolversi e a influenzare la musica contemporanea. Band come Coldplay e Arctic Monkeys dimostrano come il rock sappia ancora reinventarsi e parlare alle nuove generazioni.
+        </p>
+    </div>
+</div>
+<div class="card" onclick="mostraTesto('rapTesto')">
+    <img src="https://cdn.pixabay.com/photo/2017/08/06/00/26/hip-hop-2589578_1280.jpg">
+    <div>
+        <h3>Rap / Hip Hop</h3>
+        <p>Musica ritmica basata su rime, beat e cultura urbana.</p>
+
+        <p id="rapTesto" style="display:none;">
+        La storia dell’hip hop è un racconto unico di creatività, identità e trasformazione sociale, nato nelle strade e diventato un fenomeno globale. Le sue origini risalgono agli anni ’70 nel quartiere del Bronx, a New York, in un contesto segnato da difficoltà economiche ma anche da una forte vitalità culturale. Qui il DJ giamaicano DJ Kool Herc organizza feste di quartiere in cui sperimenta una tecnica innovativa: isolare e ripetere i “break” ritmici dei dischi funk e soul, dando ai ballerini più spazio per esprimersi. Nasce così uno dei pilastri dell’hip hop.
+
+Fin dall’inizio, l’hip hop non è solo musica ma una vera cultura composta da quattro elementi principali: il DJing, il MCing (rap), il breakdance e il writing (graffiti). Negli anni ’70 e primi ’80, figure come Grandmaster Flash e Afrika Bambaataa contribuiscono a strutturare questo movimento, trasformandolo in una forma artistica riconoscibile e organizzata.
+
+Negli anni ’80 l’hip hop esce dai quartieri di origine e raggiunge il grande pubblico. Brani come “Rapper’s Delight” dei The Sugarhill Gang portano il rap nelle classifiche musicali, mentre gruppi come Run-D.M.C. mescolano rap e rock, ampliando ulteriormente il pubblico. È anche il periodo in cui l’hip hop diventa uno strumento di denuncia sociale, raccontando le difficoltà della vita urbana.
+
+Gli anni ’90 sono spesso considerati l’età d’oro dell’hip hop. Il genere si evolve artisticamente e si diversifica, con artisti come Tupac Shakur e The Notorious B.I.G. che trasformano il rap in una forma narrativa potente e personale. In questo periodo emergono diverse scene regionali negli Stati Uniti, ciascuna con un proprio stile distintivo.
+
+Dal 2000 in poi, l’hip hop diventa il genere dominante a livello globale. Artisti come Jay-Z e Eminem consolidano il successo commerciale e culturale del rap, mentre nuove influenze musicali continuano a ridefinire il suono del genere.
+
+Negli anni 2010 e oltre, l’hip hop si fonde con altri generi e si diffonde in tutto il mondo. Artisti come Kendrick Lamar portano avanti una tradizione di liriche impegnate, mentre altri sperimentano con sonorità trap, elettroniche e pop. Il genere diventa una piattaforma globale per esprimere identità, protesta e innovazione.
+        </p>
+    </div>
+</div>
+</section>
+
+<section id="artisti">
+    <h2>⭐ Artisti Famosi</h2>
+
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Taylor_Swift_2023.jpg">
+        <div>
+            <h3>Taylor Swift</h3>
+            <p>Icona pop mondiale.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Drake_2016.jpg">
+        <div>
+            <h3>Drake</h3>
+            <p>Star dell’hip-hop internazionale.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Queen_1977.jpg">
+        <div>
+            <h3>Queen</h3>
+            <p>Leggendaria band rock.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Il Mondo della Musica</p>
+</footer>
+<script>
+function mostraTesto(id) {
+    var elemento = document.getElementById(id);
+    if (elemento.style.display === "none") {
+        elemento.style.display = "block";
+    } else {
+        elemento.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
